@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/gridGiphyFragment">
+
+    <fragment
+        android:id="@+id/gridGiphyFragment"
+        android:name="com.example.trainman.view.GridGiphyFragment"
+        android:label="fragment_grid_giphy"
+        tools:layout="@layout/fragment_grid_giphy" >
+        <action
+            android:id="@+id/action_gridGiphyFragment_to_fullViewFragment"
+            app:destination="@id/fullViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullViewFragment"
+        android:name="com.example.trainman.view.FullViewFragment"
+        android:label="FullViewFragment" />
+</navigation>
